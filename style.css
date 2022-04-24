@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+body {
+  box-sizing: border-box;
+  background: #F4F9F9;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.headings {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 15px;
+  text-align: left;
+}
+
+/* Nav Bar Section */
+nav {
+  overflow: hidden;
+  background-color: #fff;
+  color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+nav:hover {
+  background-color: #fff;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: teal;
+  color: #fff;
+}
+
+#right {
+  background-color: rgba(0, 128, 128, 0.863);
+}
+
+/* Header Section */
+
+header {
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* Slideshow Section */
+.slideshow-container {
+  width: 100%;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* Booking Form */
+.container>form {
+  background-color: white;
+  width: 30rem;
+}
+
+.form-heading {
+  background-color: teal;
+  color: white;
+  padding: 20px;
+  margin: 0%;
+  text-align: left;
+  font-size: 30px;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=date], select, textarea, input[type=number] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+input[type=number], select, textarea {
+  resize: vertical;
+}
+
+input[type=submit] {
+  color: #000;
+  background: transparent;
+  padding: 12px 20px;
+  margin: .8rem 0;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.topleft {
+  position: absolute;
+  top: 12rem;
+  left: 30rem;
+  font-size: 18px;
+  display: none;
+}
+
+.closebtn {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Rooms Section */
+
+#rooms {
+  margin: 4.5rem 0 4.5rem 0;
+  height: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.flex-item {
+  background-color: white;
+  padding: 1rem;
+  margin: .8rem;
+  flex: 50%;
+  box-shadow: 0px 0px 8px #9D9D9D;
+  border-radius: 10px;
+}
+
+.flex-item>img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.para, .price {
+  margin: 20px;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.card-heading {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 15px;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: 0px;
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  transition: .2s linear;
+}
+
+button:hover {
+  background-color: teal;
+}
+
+/* About Section */
+
+#about {
+  height: 100%;
+  margin: 4.5rem 0 4.5rem 0;
+}
+
+.item {
+  padding: 10px;
+  margin: 10px;
+  flex: 50%;
+  line-height: 1.5rem;
+}
+
+.item>p {
+  font-size: 18px;
+  text-align: justify;
+  padding: 1rem;
+}
+
+.item>img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Our Hotels Section */
+
+#hotels {
+  height: 100%;
+  margin: 4.5rem 0 4.5rem 0;
+}
+
+#service {
+  background-color: teal;
+  padding: 2%;
+  color: white;
+  font-weight: bolder;
+}
+
+.offer-section {
+  background-color: teal;
+  color: #fff;
+  margin: 5% 0%;
+  padding: 10px 15px;
+}
+
+.offer-section:hover {
+  background-color: teal;
+}
+
+.offer-section>form {
+  background-color: transparent;
+}
+
+.offer-section>p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: .5rem 0;
+}
+
+#mail {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 2%;
+  outline: none;
+  padding: .6rem;
+  border-radius: 5px;
+  border: 1px solid rgb(199, 199, 199);
+}
+
+.subs {
+  background-color: teal;
+  border: 2px solid #fff;
+}
+
+.subs:hover {
+  background-color: #000;
+}
+
+.div3>form {
+  background-color: transparent;
+}
+
+
+/* Contact Section */
+
+.contact-info {
+  margin-left: 15px;
+  line-height: 1.6rem;
+}
+
+.contact-info>i {
+  margin: .6rem 0;
+  font-size: 1.2rem;
+}
+
+.contact-info>span {
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.contact-form {
+  margin: 2% 0%;
+  padding: 10px 15px;
+}
+
+.contact-form>p {
+  margin: .6rem 0;
+  font-size: 1.2rem;
+}
+
+.contact-form>form>input {
+  width: 100%;
+  height: 35px;
+  margin: .6rem 0;
+  outline: none;
+  padding: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid rgb(199, 199, 199);
+}
+
+/* Footer Section */
+
+.find {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  line-height: 3rem;
+}
+
+
+footer>a {
+  font-size: 1.8rem;
+  color: #fff;
+  padding: .5rem;
+}
+
+footer>p {
+  font-size: 1.5rem;
+}
+
+.fa-heart {
+  color: red;
+  text-shadow: 0px 0px 10px red;
+}
+
+/* Media Queries Section */
+
+@media screen and (max-width: 700px) {
+
+  footer>p {
+    font-size: 1.4rem;
+  }
+
+  .container>form {
+    width: 18rem;
+  }
+
+  .contact-info>i {
+    font-size: 1rem;
+  }
+
+  .contact-info>span {
+    font-size: 1rem;
+  }
+
+  nav a {
+    padding: 16px 12px;
+    font-size: 18px;
+  }
+
+  #right {
+    display: none;
+  }
+
+  .topleft {
+    top: 80px;
+    left: 5px;
+    width: 95%;
+  }
+
+  img {
+    width: auto;
+    height: 100vh;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+}
